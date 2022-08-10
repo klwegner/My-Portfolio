@@ -126,6 +126,10 @@ a:hover {
   font-size: 2.5em;
 }
 
+.contactBarMobile{
+  display:none;
+}
+
 
 @media (min-width:601px) and (max-width: 1300px) {
     .row {
@@ -208,9 +212,10 @@ h2 {
     display:none;
 }
 
-.contactBarModible {
+.contactBarMobile {
     width:80%;
     margin: 2% 10%;
+    display:block;
 }
 
 .links{
