@@ -1,0 +1,234 @@
+body {
+  background-color: #f0ece3;
+}
+
+h1,
+h2 {
+  font-family: "Aboreto", cursive;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.centered {
+  margin: auto;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 20vw;
+  margin: 2% 5%;
+  text-align: right;
+  background-color: #dfd3c3;
+  border-radius: 10px;
+}
+
+.square2 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+}
+
+.square p {
+  text-align: center;
+  background-color: #f0ece3;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: black;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.picOfMe {
+  border-radius: 10px;
+  margin-top: 15%;
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.nameOverlay {
+  position: absolute;
+  text-align: right;
+  margin-left: 10%;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(199, 177, 152, 0.8);
+  padding: 0.5%;
+  border-radius: 10px;
+}
+
+.nameOverlay h1 {
+  font-size: 2.5em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 2% 20%;
+}
+
+.aboutMe {
+  width: 100%;
+  background-color: #dfd3c3;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.aboutMe h1 {
+  margin: 2% 5%;
+}
+
+.aboutMe p {
+  margin: 2% 5%;
+}
+
+.section {
+  background-color: #f0ece3;
+  padding: 1%;
+  margin: 2% 5%;
+  border-radius: 10px;
+}
+
+.square2 a{
+    font-size:2em;
+}
+
+.left {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom h1 {
+  font-size: 2.5em;
+}
+
+
+@media (min-width:601px) and (max-width: 1300px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:90%;
+        margin: 5%;
+      }
+
+      .nameOverlay {
+
+    width:50%;
+    right:0;
+    top:5%;
+      }
+      .square2 p{
+        display:none;
+        }
+
+        .picOfMe {
+            margin: 10% 0;
+
+          }
+
+          .left{
+            display: flex;
+            flex-direction: row;
+          }
+
+          .contactBar {
+            margin: 25% 5%;
+
+          }
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+    margin: 5%;
+  }
+
+  .nameOverlay {
+    position: absolute;
+    width: 80%;
+    top: 2%;
+  }
+
+  .nameOverlay h1 {
+    font-size: 1em;
+  }
+
+  .nameOverlay h2 {
+    font-size: 1em;
+  }
+
+  .picOfMe {
+    margin-top: 15%;
+width:80%;
+margin: 15% 10% 0 10%;
+  }
+  h1,
+h2 {
+  font-size: 1em;
+}
+
+.contactBar{
+    display:none;
+}
+
+.contactBarModible {
+    width:80%;
+    margin: 2% 10%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.square{
+    width:90%;
+    margin: 5%;
+}
+
+.square2 p{
+display:none;
+}
+
+.square2 a{
+    margin:0;
+}
+
+}
