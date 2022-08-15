@@ -130,6 +130,27 @@ a:hover {
   display:none;
 }
 
+.emailForm {
+display:flex;
+flex-direction: column;
+align-items: center;
+width:90%;
+margin:0 5%;
+}
+
+.emailForm input {
+  border-radius: 10px;
+  border:none;
+  margin:2% 0;
+  width:100%;
+}
+
+.emailForm textarea {
+  border:none;
+  border-radius: 10px;
+  margin:2% 0;
+}
+
 
 @media (min-width:601px) and (max-width: 1300px) {
     .row {
@@ -234,6 +255,10 @@ display:none;
 
 .square2 a{
     margin:0;
+}
+
+.emailForm {
+  display:none;
 }
 
 }
