@@ -24,25 +24,31 @@ p {
 .square {
   display: flex;
   flex-direction: column;
-  width: 20vw;
-  height: 20vw;
-  margin: 2% 5%;
+  width: 25vw;
+  height: 25vw;
+  margin: 2%;
   text-align: right;
   background-color: #dfd3c3;
   border-radius: 10px;
 }
 
+.square:hover {
+  background-color: black;
+}
+
 .square2 {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 80%;
-  margin: 10%;
+  width: 77.5%;
+  height: 77.5%;
+  margin: 7.5%;
+  padding: 5%;
+  background-color: #f0ece3;
+  border-radius: 10px;
 }
 
 .square p {
-  text-align: center;
-  background-color: #f0ece3;
+  text-align: justify;
 }
 
 a {
@@ -109,8 +115,8 @@ a:hover {
   border-radius: 10px;
 }
 
-.square2 a{
-    font-size:2em;
+.square2 a {
+  font-size: 2em;
 }
 
 .left {
@@ -126,73 +132,63 @@ a:hover {
   font-size: 2.5em;
 }
 
-.contactBarMobile{
-  display:none;
+.contactBarMobile {
+  display: none;
 }
 
 .emailForm {
-display:flex;
-flex-direction: column;
-align-items: center;
-width:90%;
-margin:0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .emailForm input {
   border-radius: 10px;
-  border:none;
-  margin:2% 0;
-  width:100%;
+  border: none;
+  margin: 2% 0;
+  width: 100%;
 }
 
 .emailForm textarea {
-  border:none;
+  border: none;
   border-radius: 10px;
-  margin:2% 0;
+  margin: 2% 0;
 }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 5%;
+  }
 
-@media (min-width:601px) and (max-width: 1300px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width:90%;
-        margin: 5%;
-      }
+  .nameOverlay {
+    width: 50%;
+    right: 0;
+    top: 5%;
+  }
 
-      .nameOverlay {
+  .square2 p {
+    display: none;
+  }
 
-    width:50%;
-    right:0;
-    top:5%;
-      }
-      .square2 p{
-        display:none;
-        }
+  .picOfMe {
+    margin: 10% 0;
+  }
 
-        .picOfMe {
-            margin: 10% 0;
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
 
-          }
-
-          .left{
-            display: flex;
-            flex-direction: row;
-          }
-
-          .contactBar {
-            margin: 25% 5%;
-
-          }
-
-
-
+  .contactBar {
+    margin: 25% 5%;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 600px) {
   body {
@@ -201,7 +197,7 @@ margin:0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:90%;
+    width: 90%;
     margin: 5%;
   }
 
@@ -221,44 +217,52 @@ margin:0 5%;
 
   .picOfMe {
     margin-top: 15%;
-width:80%;
-margin: 15% 10% 0 10%;
+    width: 80%;
+    margin: 15% 10% 0 10%;
   }
   h1,
-h2 {
-  font-size: 1em;
-}
+  h2 {
+    font-size: 1em;
+  }
 
-.contactBar{
-    display:none;
-}
+  .contactBar {
+    display: none;
+  }
 
-.contactBarMobile {
-    width:80%;
+  .contactBarMobile {
+    width: 80%;
     margin: 2% 10%;
-    display:block;
-}
+    display: block;
+  }
 
-.links{
+  .links {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.square{
-    width:90%;
+  .square {
+    width: 90%;
     margin: 5%;
-}
+    background-color: transparent;
+  }
 
-.square2 p{
-display:none;
-}
+  .square2 {
+    height: auto;
+    background-color: #dfd3c3;
+    vertical-align: middle;
+    margin: 5% auto;
+    padding: 10% 0;
+  }
 
-.square2 a{
-    margin:0;
-}
+  .square2 p {
+    display: none;
+  }
 
-.emailForm {
-  display:none;
-}
+  .square2 a {
+    margin: 0;
+  }
 
+  .emailForm {
+    display: none;
+  }
 }
